@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>点名啦</title>
+		<link rel="stylesheet" type="text/css" href="program/css/css.css"/>	
+		<script src="program/js/excel_out.js"></script>
+		<script src="program/js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<h1 class="title">XXXXXXXXX班点名系统</h1>
+		<div id="bdtts_div_id">
+	        <audio id="tts_autio_id" autoplay="autoplay">
+	            <source id="tts_source_id" src="http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&spd=5&text=准备点名" type="audio/mpeg">
+	            <embed id="tts_embed_id" height="0" width="0" src="">
+	        </audio>
+    	</div>
+		<div class="btn_box">
+			<a href="#" class="aaa">导入学生名单<input class="btn change" id="import_name" type="file"onchange="importExcel(this)" /></a>
+			<input class="btn" id="stu_names" type="hidden" />
+			<button class="btn" type="button" id="start_name" onClick="startName($('.btn_C').text());">开始点名</button>
+			<button class="btn" type="button" id="answer_name" onClick="answerName();">点人答题</button>
+			<p class="btns_box">
+				<button class="btn_L"  type="button">慢速</button>
+				<button class="btn_C">2</button>
+				<button class="btn_R"  type="button">快速</button>
+			</p>
+			<p class="selct_box">
+				<select class="select_voice">
+					<option>-选择声音-</option>
+					<option>-林志玲-</option>
+					<option>-万佩-</option>
+				</select>
+			</p>
+			<p id="timers"></p>
+		</div>
+		
+		<div class="lists" id="student_name">
+			<ul></ul>
+		</div>
+		
+		<div class="queqin">
+			<div class="que_tit">缺勤名单</div>
+			<div class="que_txt" id="absence">
+
+			</div>
+			<table id="tableExcel" style="display: none;;">   
+
+			</table> 
+			<button class="btn"  type="button" id="out_name" onclick="method5('tableExcel')">导出名单</button>
+		</div>
+		<script src="program/js/excel_set.js" type="text/javascript" charset="utf-8"></script>
+		<script src="program/js/control.js" type="text/javascript" charset="utf-8"></script>
+		<script src="program/js/table_out.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

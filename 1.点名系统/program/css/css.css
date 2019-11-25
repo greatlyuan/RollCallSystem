@@ -1,0 +1,67 @@
+﻿@charset "utf-8"; 
+
+/*Time：2018-4-17 15:25:57
+ *Name：周超、彭朝元、万佩 
+ *版本：V1.0
+ *
+ * */
+
+  @media(max-width: 1440px){      
+    .btn_box button.btn{ width: 150px !important; }
+    .btns_box{ width: 15% !important; }
+    .lists li:hover,.lists li.que{ border-radius: 10px !important; }
+    .lists li{ padding-top: 65px !important; }
+    .btn.change,.aaa{ width: 150px !important; }
+    .btn_box{ padding-left: 180px !important; }
+}
+
+*{ padding: 0; border: none; margin: 0; list-style: none; outline: none; box-sizing: border-box; }
+button,input{ background: #00aeff; float: left; text-align: center; line-height: 36px; color: #fff; cursor: pointer; font-size: 16px; }
+button,input:active{ background: #009ce4; }
+
+#timers {
+	margin: 7px 0;
+}
+
+.time_unavailable {
+	background: #ccc;
+}
+
+/*按钮组*/
+.title{ font-size: 24px; text-align: center; padding: 30px 0; }
+.btn_box{width: 90%;overflow: hidden;margin: 0 auto;background: #eee;position: relative; padding-left: 230px;}
+.btn_box button,input.btn{ border-radius: 5px; width: 180px; height: 36px; line-height: 36px; margin-right: 3%; }
+.btns_box{ width: 13%; height: 36px; margin-right: 3%; float: left; }
+.btns_box button,input{ width: 36%; height: 36px; border: 5px; margin-right: 4px; }
+.btns_box button.btn_C{ width: 20%; }
+.btns_box button.btn_L{ padding-left: 8px; position: relative; border-radius: 5px 0 0 5px; }
+.btns_box button.btn_L:before,.btns_box button.btn_R:after{ content: ''; width: 0; height: 0; display: inline-block; border: 8px solid #fff; border-color: rgba(0,0,0,0) #fff rgba(0,0,0,0) rgba(0,0,0,0); position: absolute; left: -2%; top: 10px; }
+.btns_box button.btn_R{ padding-right: 8px; position: relative; border-radius: 0 5px 5px 0; }
+.btns_box button.btn_R:after{ border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #fff; left: 76%; }
+.selct_box select{ font-size: 16px; padding-left: 15px; margin-right: 4%; background: #fff; color: #00aeff; width: 180px; height: 36px; display: inline-block; float: left; border: solid 2px #00aeff; padding-right: 24px; }
+
+/*中间*/
+.lists{width: 91%;height: auto;overflow: hidden;margin: 20px auto 0;background: #eee;}
+.lists ul{overflow: hidden;width: 100%;/* height: 100px; */margin-top: 10px;}
+.lists li{ margin-right: 5px; margin-top: 10px;
+ width: 4.7%; height: 100px; overflow: hidden; float: left; padding-top: 75px; text-align: center; background: url(../img/icon.png) no-repeat center 3px; cursor: pointer; background-size: 75%; }
+.lists li:hover{ background: #AF85FF url(../img/icon.png) no-repeat center 3px; background-size: 75%; border-radius: 15px; }
+.lists li.que{ background: #ee8c8d url(../img/icon_hover.png) no-repeat center 3px; background-size: 75%; border-radius: 15px; }
+.back_color{ background-size: 75% !important; border-radius: 15px !important; }
+
+/*底部*/
+.queqin{ width: 90%; height: auto; overflow: hidden; margin: 40px auto 0; background: #eee; font-size: 20px; font-weight: bold; padding: 20px; }
+.queqin .que_tit{ width: 10%; float: left; text-align: right; padding-top: 20px; padding-right: 20px; color: red; }
+.queqin .que_txt{ width: 70%; float: left; background: #00aeff; height: auto; min-height: 150px; border-radius: 10px; color: #fff; padding: 15px; }
+.queqin button.btn{ border-radius: 5px; width: 180px; height: 36px; line-height: 36px; margin: 50px 0 0 30px; }
+.queqin .que_txt b{ padding-left: 10px; }
+
+/*2018年4月25日20:54:14*/
+.aaa{ position: absolute; left: 0; display: inline-block; width: 180px; height: 36px; text-align: center; line-height: 36px; background: 
+#009ce4; border-radius: 5px; color: #fff; font-size: 16px; text-decoration: none; cursor: pointer; }
+.btn.change{ width: 180px; overflow: hidden; opacity: 0; position: absolute; top: 0; left: 0; cursor: pointer; }
+
+
+
+
+
